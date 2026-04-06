@@ -13,4 +13,4 @@ A dynamic web application built using the **WAMP stack** (Windows, Apache, MySQL
 * **Frontend:** HTML5, CSS3 (Responsive Design)
 * **Backend:** PHP (Server-side logic)
 * **Database:** MySQL (Relational data storage)
-* **Server:** Apache (via WampServer)
+* **Server:** Apache (via WampServer)<img width="1894" height="924" alt="Screenshot 2026-04-06 182338" src="https://github.com/user-attachments/assets/7f4afff8-d69b-4fd0-bbd3-c06e0ea05223" />
