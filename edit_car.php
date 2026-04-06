@@ -1,7 +1,6 @@
 <?php
 include('db.php');
 
-// If the Update button is clicked
 if(isset($_POST['update_price'])){
     $car_id = $_POST['car_id'];
     $new_price = $_POST['new_price'];

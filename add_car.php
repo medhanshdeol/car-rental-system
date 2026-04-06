@@ -1,14 +1,12 @@
 <?php
-// Include the database connection file we made earlier
 include('db.php'); 
 
 if(isset($_POST['add_btn'])){
-    // Collecting data from the form
+    
     $brand = $_POST['brand'];
     $model = $_POST['model'];
     $price = $_POST['price'];
 
-    // SQL command to insert data into the database
     $sql = "INSERT INTO cars (brand, model, price, status) VALUES ('$brand', '$model', '$price', 'Available')";
 
     if(mysqli_query($conn, $sql)){

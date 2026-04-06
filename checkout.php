@@ -2,7 +2,7 @@
 session_start();
 include('db.php');
 
-// 1. Check if a car was actually selected
+
 if(!isset($_GET['car_id'])){
     header("Location: index.php");
     exit();
@@ -10,7 +10,7 @@ if(!isset($_GET['car_id'])){
 
 $car_id = $_GET['car_id'];
 
-// 2. Fetch the specific car details
+
 $query = "SELECT * FROM cars WHERE id = '$car_id'";
 $result = mysqli_query($conn, $query);
 $car = mysqli_fetch_assoc($result);

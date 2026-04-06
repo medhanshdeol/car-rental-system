@@ -1,15 +1,14 @@
 <?php 
-include('db.php'); // Connects to your database
+include('db.php'); 
 $msg = "";
 
 if(isset($_POST['register'])){
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     
-    // password_hash makes the password secret in the database
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT); 
 
-    // SQL to save the user
+    
     $sql = "INSERT INTO users (full_name, email, password) VALUES ('$name', '$email', '$pass')";
     
     if(mysqli_query($conn, $sql)){

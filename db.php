@@ -16,5 +16,5 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// If we reach here, it's connected!
+
 ?>
